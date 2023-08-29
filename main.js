@@ -4,3 +4,5 @@ const port = new SerialPort({ path: 'COM6', baudRate: 9600 })
 
 const parser = port.pipe(new ReadlineParser({ delimiter: ',' }))
 parser.on('data', console.log)
+
+//Change 
